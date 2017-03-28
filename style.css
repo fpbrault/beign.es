@@ -2,31 +2,27 @@ html {
     background: url(beignes2.jpg) repeat center center fixed;
 }
 
-.title {
-    font-family: 'Indie Flower', cursive;
-    font-size: 80px;
-    width: 700px;
-    height: 190px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 100px;
-    text-shadow: 3px 3px #3c3c3c;
-    background: #000;
-    color: #fff;
-    /* for IE */
-    filter: alpha(opacity=60);
-    /* CSS3 standard */
-    opacity: 0.8;
+.container {
+    position: fixed;
+    /* or absolute */
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+    background-color: rgba(240, 92, 116, 0.91);
     -moz-border-radius: 10px;
     /* for Firefox */
     -webkit-border-radius: 10px;
     /* for Webkit-Browsers */
-    border-radius: 10px;
+    border-radius: 30px;
     /* regular */
+    padding: 30px;
+}
+
+#text-content {
+    font-family: 'Coming Soon', cursive;
+    font-size: 80px;
+    text-align: center;
+    line-height: 100px;
+    color: #000
 }
